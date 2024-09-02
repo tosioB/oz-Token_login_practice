@@ -34,7 +34,7 @@ function logout() {
 function getUserInfo() {
   return axios.get("http://localhost:3000", {
     // header에 토큰을 넣어서 전송
-    headers: { Authorization: `Bearer ${accessToken}` },
+    headers: { 'Authorization': `Bearer ${accessToken}` },
   });
 }
 
